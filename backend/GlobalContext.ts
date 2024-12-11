@@ -6,12 +6,12 @@ class GlobalContext {
     experimentalConnector: boolean;
     debug: boolean;
   } = {
-    data: '',
-    record: '',
-    leaguePath: '',
-    experimentalConnector: false,
-    debug: false,
-  };
+      data: '',
+      record: '',
+      leaguePath: 'D:/Games/Riot Games/League of Legends',
+      experimentalConnector: false,
+      debug: false,
+    };
 }
 
 export default new GlobalContext();
