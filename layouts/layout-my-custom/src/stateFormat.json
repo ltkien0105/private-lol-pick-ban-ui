@@ -1,0 +1,267 @@
+{
+    "leagueConnected": true,
+    "champSelectActive": true,
+    "blueTeam": {
+        "bans": [],
+        "picks": [
+            {
+                "isActive": true,
+                "displayName": "Azir Đà Phật",
+                "id": 0,
+                "spell1": {
+                    "id": 4,
+                    "icon": "/cache/14.24.1/spell/SummonerFlash.png"
+                },
+                "spell2": {
+                    "id": 12,
+                    "icon": "/cache/14.24.1/spell/SummonerTeleport.png"
+                },
+                "champion": {
+                    "id": 266,
+                    "name": "Aatrox",
+                    "idName": "Aatrox",
+                    "loadingImg": "/cache/14.24.1/champion/Aatrox_loading.jpg",
+                    "splashImg": "/cache/14.24.1/champion/Aatrox_splash.jpg",
+                    "splashCenteredImg": "/cache/14.24.1/champion/Aatrox_centered_splash.jpg",
+                    "squareImg": "/cache/14.24.1/champion/Aatrox_square.png"
+                }
+            },
+            {
+                "isActive": false,
+                "displayName": "",
+                "id": 1,
+                "spell1": {
+                    "id": 18446744073709552000,
+                    "icon": ""
+                },
+                "spell2": {
+                    "id": 18446744073709552000,
+                    "icon": ""
+                },
+                "champion": {
+                    "id": 45,
+                    "name": "Veigar",
+                    "idName": "Veigar",
+                    "loadingImg": "/cache/14.24.1/champion/Veigar_loading.jpg",
+                    "splashImg": "/cache/14.24.1/champion/Veigar_splash.jpg",
+                    "splashCenteredImg": "/cache/14.24.1/champion/Veigar_centered_splash.jpg",
+                    "squareImg": "/cache/14.24.1/champion/Veigar_square.png"
+                }
+            },
+            {
+                "isActive": false,
+                "displayName": "",
+                "id": 2,
+                "spell1": {
+                    "id": 18446744073709552000,
+                    "icon": ""
+                },
+                "spell2": {
+                    "id": 18446744073709552000,
+                    "icon": ""
+                },
+                "champion": {
+                    "id": 84,
+                    "name": "Akali",
+                    "idName": "Akali",
+                    "loadingImg": "/cache/14.24.1/champion/Akali_loading.jpg",
+                    "splashImg": "/cache/14.24.1/champion/Akali_splash.jpg",
+                    "splashCenteredImg": "/cache/14.24.1/champion/Akali_centered_splash.jpg",
+                    "squareImg": "/cache/14.24.1/champion/Akali_square.png"
+                }
+            },
+            {
+                "isActive": false,
+                "displayName": "",
+                "id": 3,
+                "spell1": {
+                    "id": 18446744073709552000,
+                    "icon": ""
+                },
+                "spell2": {
+                    "id": 18446744073709552000,
+                    "icon": ""
+                },
+                "champion": {
+                    "id": 83,
+                    "name": "Yorick",
+                    "idName": "Yorick",
+                    "loadingImg": "/cache/14.24.1/champion/Yorick_loading.jpg",
+                    "splashImg": "/cache/14.24.1/champion/Yorick_splash.jpg",
+                    "splashCenteredImg": "/cache/14.24.1/champion/Yorick_centered_splash.jpg",
+                    "squareImg": "/cache/14.24.1/champion/Yorick_square.png"
+                }
+            },
+            {
+                "isActive": false,
+                "displayName": "",
+                "id": 4,
+                "spell1": {
+                    "id": 18446744073709552000,
+                    "icon": ""
+                },
+                "spell2": {
+                    "id": 18446744073709552000,
+                    "icon": ""
+                },
+                "champion": {
+                    "id": 143,
+                    "name": "Zyra",
+                    "idName": "Zyra",
+                    "loadingImg": "/cache/14.24.1/champion/Zyra_loading.jpg",
+                    "splashImg": "/cache/14.24.1/champion/Zyra_splash.jpg",
+                    "splashCenteredImg": "/cache/14.24.1/champion/Zyra_centered_splash.jpg",
+                    "squareImg": "/cache/14.24.1/champion/Zyra_square.png"
+                }
+            }
+        ],
+        "isActive": true
+    },
+    "redTeam": {
+        "bans": [],
+        "picks": [
+            {
+                "isActive": false,
+                "displayName": "",
+                "id": 5,
+                "spell1": {
+                    "id": 0,
+                    "icon": ""
+                },
+                "spell2": {
+                    "id": 0,
+                    "icon": ""
+                },
+                "champion": {
+                    "id": 0,
+                    "name": "",
+                    "idName": "",
+                    "loadingImg": "",
+                    "splashImg": "",
+                    "splashCenteredImg": "",
+                    "squareImg": ""
+                }
+            },
+            {
+                "isActive": false,
+                "displayName": "",
+                "id": 6,
+                "spell1": {
+                    "id": 0,
+                    "icon": ""
+                },
+                "spell2": {
+                    "id": 0,
+                    "icon": ""
+                },
+                "champion": {
+                    "id": 0,
+                    "name": "",
+                    "idName": "",
+                    "loadingImg": "",
+                    "splashImg": "",
+                    "splashCenteredImg": "",
+                    "squareImg": ""
+                }
+            },
+            {
+                "isActive": false,
+                "displayName": "",
+                "id": 7,
+                "spell1": {
+                    "id": 0,
+                    "icon": ""
+                },
+                "spell2": {
+                    "id": 0,
+                    "icon": ""
+                },
+                "champion": {
+                    "id": 0,
+                    "name": "",
+                    "idName": "",
+                    "loadingImg": "",
+                    "splashImg": "",
+                    "splashCenteredImg": "",
+                    "squareImg": ""
+                }
+            },
+            {
+                "isActive": false,
+                "displayName": "",
+                "id": 8,
+                "spell1": {
+                    "id": 0,
+                    "icon": ""
+                },
+                "spell2": {
+                    "id": 0,
+                    "icon": ""
+                },
+                "champion": {
+                    "id": 0,
+                    "name": "",
+                    "idName": "",
+                    "loadingImg": "",
+                    "splashImg": "",
+                    "splashCenteredImg": "",
+                    "squareImg": ""
+                }
+            },
+            {
+                "isActive": false,
+                "displayName": "",
+                "id": 9,
+                "spell1": {
+                    "id": 0,
+                    "icon": ""
+                },
+                "spell2": {
+                    "id": 0,
+                    "icon": ""
+                },
+                "champion": {
+                    "id": 0,
+                    "name": "",
+                    "idName": "",
+                    "loadingImg": "",
+                    "splashImg": "",
+                    "splashCenteredImg": "",
+                    "squareImg": ""
+                }
+            }
+        ],
+        "isActive": false
+    },
+    "meta": {
+        "cdn": "https://ddragon.leagueoflegends.com/cdn",
+        "version": {
+            "champion": "14.24.1",
+            "item": "14.24.1"
+        }
+    },
+    "timer": 82,
+    "state": "PICK PHASE 1",
+    "config": {
+        "frontend": {
+            "scoreEnabled": true,
+            "spellsEnabled": true,
+            "coachesEnabled": true,
+            "blueTeam": {
+                "name": "Team Blue",
+                "score": 2,
+                "coach": "Coach Blue",
+                "color": "rgb(0,151,196)"
+            },
+            "redTeam": {
+                "name": "Team Red",
+                "score": 1,
+                "coach": "Coach Red",
+                "color": "rgb(222,40,70)"
+            },
+            "patch": "9.19"
+        },
+        "contentPatch": "latest",
+        "contentCdn": "https://ddragon.leagueoflegends.com/cdn"
+    }
+}

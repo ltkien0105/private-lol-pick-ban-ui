@@ -7,9 +7,12 @@ import supSplash from "../assets/sup_splash_placeholder.svg";
 
 const pickSplashes = [topSplash, jungSplash, midSplash, botSplash, supSplash];
 
-// This function will check if url has value or not, if url has value, it will convert replace ws:// to http://
-// and concate to /cache/..., (ex: http://localhost:8999/cache/...) to get image path from backend/cache folder.
-// This helps load image faster, don't need to query request many time
+/** 
+* This function will check if url has value or not, if url has value, it will convert replace ws:// to http://
+and concate to /cache/..., (ex: http://localhost:8999/cache/...) to get image path from /backend/cache folder.
+*
+* This helps load image faster, don't need to query request many time.
+*/
 const makeUrlAbsolute = (url, backendUrl) => {
     if (!url || !url.startsWith('/cache')) {
         return url;
@@ -72,6 +75,11 @@ const putPlaceholders = (team, backendUrl) => {
     }
 };
 
+/**
+* Assign spell icon image and champion image to state.{red | blue|}Team.{bans | picks}
+*
+* Reference state format in [stateFormat.json](/Projects/Web/private-lol-ban-pick-ui/layouts/layout-my-custom/src/stateFormat.json) file.
+**/
 const convertState = (state, backendUrl) => {
     if (Object.keys(state).length !== 0) {
         putPlaceholders(state.blueTeam, backendUrl);

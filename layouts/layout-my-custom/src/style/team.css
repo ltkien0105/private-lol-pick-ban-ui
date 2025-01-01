@@ -1,0 +1,81 @@
+.Team {
+    position: absolute;
+    width: var(--box-team-width);
+    height: var(--box-height);
+    bottom: var(--champselect-margin-bot);
+    @import "./picks";
+    @import "./bans";
+}
+.Team .TeamName {
+    font-size: 40px;
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+    margin-top: -15px;
+}
+.Team .TeamName.WithoutCoaches {
+    font-size: 60px;
+    margin-top: -20px;
+}
+.Team .CoachName {
+    font-size: 20px;
+    margin-top: -20px;
+}
+.Team .TeamScore {
+    font-size: 60px;
+    margin-top: -20px;
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+    width: var(--box-ban-height);
+    text-align: center;
+    height: calc(100% + 23px);
+}
+.Team.TeamBlue {
+    right: calc(50% + calc(var(--box-width) / 2));
+}
+.Team.TeamBlue .TeamScore {
+    border-right: 3px solid black;
+}
+.Team.TeamBlue .Bans {
+    justify-content: flex-end;
+    background-color: var(--color-blue);
+    border: solid var(--color-blue) var(--border-width);
+    float: right;
+}
+.Team.TeamBlue .Bans .Ban {
+    border-left: solid var(--color-blue) var(--border-width);
+}
+.Team.TeamBlue .Bans .Ban .BanImage.Active::before {
+    background-image: linear-gradient(to left, var(--color-blue) 0%, rgba(0, 0, 0, 0) 50%, var(--color-blue) 100%);
+}
+.Team.TeamBlue .Picks .Pick .PickImage.Active::before {
+    background-image: linear-gradient(to left, var(--color-blue) 0%, rgba(0, 0, 0, 0) 50%, var(--color-blue) 100%);
+}
+.Team.TeamBlue .TeamName {
+    margin-right: auto;
+    margin-left: 15px;
+}
+.Team.TeamRed {
+    left: calc(50% + calc(var(--box-width) / 2));
+}
+.Team.TeamRed .TeamScore {
+    border-left: 3px solid black;
+}
+.Team.TeamRed .Bans {
+    background-color: var(--color-red);
+    border: solid var(--color-red) var(--border-width);
+    float: left;
+}
+.Team.TeamRed .Bans .Ban {
+    border-right: solid var(--color-red) var(--border-width);
+}
+.Team.TeamRed .Bans .Ban .BanImage.Active::before {
+    background-image: linear-gradient(to left, var(--color-red) 0%, rgba(0, 0, 0, 0) 50%, var(--color-red) 100%);
+}
+.Team.TeamRed .Picks .Pick .PickImage.Active::before {
+    background-image: linear-gradient(to left, var(--color-red) 0%, rgba(0, 0, 0, 0) 50%, var(--color-red) 100%);
+}
+.Team.TeamRed .TeamName {
+    margin-left: auto;
+    text-align: right;
+    margin-right: 15px;
+}

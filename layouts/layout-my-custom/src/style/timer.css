@@ -1,0 +1,57 @@
+.Timer {
+    position: relative;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    overflow: hidden;
+    height: 338px;
+    margin-top: -260px;
+}
+.Timer::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -10;
+}
+.Timer .Background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: left 1s;
+}
+.Timer .Background.Blue {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, var(--color-blue) 100%);
+    left: -100%;
+}
+.Timer .Background.Red {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, var(--color-red) 100%);
+    left: 100%;
+}
+.Timer.Blue .Background.Blue {
+    left: 0;
+}
+.Timer.Red .Background.Red {
+    left: 0;
+}
+.Timer.Both {
+    background: linear-gradient(to right, var(--color-blue) 0%, var(--color-red) 100%);
+}
+.Timer .TimerChars {
+    display: flex;
+    justify-content: center;
+    margin-top: 260px;
+}
+.Timer .TimerChars .TimerChar {
+    width: 30px;
+    margin: 0 2px;
+    text-align: right;
+}
+.Timer .TimerChars .TimerChar:nth-child(2) {
+    text-align: left;
+}

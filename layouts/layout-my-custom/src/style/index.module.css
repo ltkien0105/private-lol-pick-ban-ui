@@ -1,0 +1,41 @@
+@import url(./variables.css);
+@import url(./animation.css);
+@import url(./timer.css);
+@import url(./team.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Europe .MiddleBox {
+    position: absolute;
+    color: white;
+    width: var(--box-width);
+    height: calc(var(--box-pick-height) + var(--box-ban-height));
+    bottom: var(--champselect-margin-bot);
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+.Europe .Patch {
+    height: var(--box-patch-height);
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+.Europe .Logo {
+    width: 100%;
+    height: var(--box-logo-height);
+    z-index: 10;
+}
+.Europe .Logo img {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding-top: 10%;
+    display: block;
+    object-fit: contain;
+}

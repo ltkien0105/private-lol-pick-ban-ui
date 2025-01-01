@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import convertState from './utils/convertState';
+import Overlay from './components/Overlay';
 
 function App() {
   // Define global state
@@ -42,13 +43,14 @@ function App() {
     /* newState, heartbeat are the events emitted from backend */
     Window.PB.on('newState', state => {
       // Set new global and config state
-      setGlobalState(state.state);
+      setGlobalState(state.state); 
       setConfig(state.state.config);
     });
 
     Window.PB.on('heartbeat', hb => {
-      // console.info(`Got new config: ${JSON.stringify(hb.config)}`);
-      // Set new config state
+      /**
+       * Reference /Projects/Web/private-lol-ban-pick-ui/backend/config.json to get hb config format
+       */
       setConfig(hb.config);
     });
 
@@ -76,11 +78,10 @@ function App() {
   }
 
   if (config) {
-    console.log(convertState(globalState, Window.PB.backend));
     return (
       <div className="App">
-        <h1>App</h1>
-        {/* <Overlay state={convertState(globalState, Window.PB.backend)} config={config} /> */}
+        {/* <Overlay state={globalState} config={config}/> */}
+        <Overlay />
       </div>
     );
   } else {
