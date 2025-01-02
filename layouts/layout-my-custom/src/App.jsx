@@ -81,7 +81,7 @@ function App() {
     return (
       <div className="App">
         {/* <Overlay state={globalState} config={config}/> */}
-        <Overlay />
+        <Overlay config={config}/>
       </div>
     );
   } else {
