@@ -1,23 +1,23 @@
-.OwnAnimation {
-    background: linear-gradient(0deg, rgba(249,43,4,1) 0%, rgb(139, 0, 0) 0%);
-    animation: pickAnimation 0.7s ease-in-out 0s infinite alternate;
+.OwnAnimationRed {
+    background: linear-gradient(320deg, #F7B399, #8E0902);
+    background-size: 200% 200%;
+    background-position: 0% 100%;
+    animation: pickAnimation 1s linear 0s infinite alternate;
+}
+
+.OwnAnimationBlue {
+    background: linear-gradient(250deg, #686368, #51BFD2);
+    background-size: 200% 200%;
+    background-position: 0% 100%;
+    animation: pickAnimation 1s linear 0s infinite alternate;
 }
 
 @keyframes pickAnimation {
-    0% {
-        background: linear-gradient(0deg, rgba(249,43,4,1) 0%, rgb(139, 0, 0) 0%);
+    from {
+        background-position: 0% 100%;
     }
-    25% {
-        background: linear-gradient(0deg, rgba(249,43,4,1) 0%, rgb(139, 0, 0) 25%);
-    }
-    30% {
-        background: linear-gradient(0deg, rgba(249,43,4,1) 0%, rgb(139, 0, 0) 35%);
-    }
-    75% {
-        background: linear-gradient(0deg, rgba(249,43,4,1) 0%, rgb(139, 0, 0) 45%);
-    }
-    100% {
-        background: linear-gradient(0deg, rgba(249,43,4,1) 0%, rgb(139, 0, 0) 60%);
+    to {
+        background-position: 100% 0%;
     }
 }
 

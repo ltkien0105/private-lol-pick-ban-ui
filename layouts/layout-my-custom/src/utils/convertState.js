@@ -1,4 +1,4 @@
-import banImg from "../assets/ban_placeholder.svg";
+import banImg from "../assets/line_ban_7w.png";
 import topSplash from "../assets/top_splash_placeholder.svg";
 import jungSplash from "../assets/jung_splash_placeholder.svg";
 import midSplash from "../assets/mid_splash_placeholder.svg";
@@ -17,9 +17,17 @@ const makeUrlAbsolute = (url, backendUrl) => {
     if (!url || !url.startsWith('/cache')) {
         return url;
     }
-
     const httpBackendUrl = backendUrl.replace('ws://', 'http://').replace('wss://', 'https://');
     return httpBackendUrl + url;
+};
+
+const makeSquareImgUrlAbsolute = (url, backendUrl) => {
+    if (!url || !url.startsWith('/cache')) {
+        return url;
+    }
+    const newUrl = url.replace('/champion/', '/img_square/')
+    const httpBackendUrl = backendUrl.replace('ws://', 'http://').replace('wss://', 'https://');
+    return httpBackendUrl + newUrl;
 };
 
 const putPlaceholders = (team, backendUrl) => {
@@ -51,7 +59,7 @@ const putPlaceholders = (team, backendUrl) => {
 
             pick.champion.loadingImg = makeUrlAbsolute(pick.champion.loadingImg, backendUrl);
             pick.champion.splashImg = makeUrlAbsolute(pick.champion.splashImg, backendUrl);
-            pick.champion.squareImg = makeUrlAbsolute(pick.champion.squareImg, backendUrl);
+            pick.champion.squareImg = makeSquareImgUrlAbsolute(pick.champion.squareImg, backendUrl);
         }
 
         // Bans
@@ -70,7 +78,7 @@ const putPlaceholders = (team, backendUrl) => {
                 }
             }
 
-            ban.champion.squareImg = makeUrlAbsolute(ban.champion.squareImg, backendUrl);
+            ban.champion.squareImg = makeSquareImgUrlAbsolute(ban.champion.squareImg, backendUrl);
         }
     }
 };

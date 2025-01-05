@@ -43,7 +43,7 @@ function App() {
     /* newState, heartbeat are the events emitted from backend */
     Window.PB.on('newState', state => {
       // Set new global and config state
-      setGlobalState(state.state); 
+      setGlobalState(state.state);
       setConfig(state.state.config);
     });
 
@@ -73,15 +73,15 @@ function App() {
   }
 
   if (error) {
-    // return <Error message={error} />
     return <h2>{error}</h2>
   }
 
-  if (config) {
+  if (config && Object.keys(globalState).length > 0) {
+    console.log(globalState);
     return (
       <div className="App">
         {/* <Overlay state={globalState} config={config}/> */}
-        <Overlay config={config}/>
+        <Overlay state={convertState(globalState, Window.PB.backend)} config={config}/>
       </div>
     );
   } else {
