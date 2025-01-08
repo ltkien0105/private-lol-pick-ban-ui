@@ -76,8 +76,7 @@ function App() {
     return <h2>{error}</h2>
   }
 
-  if (config && Object.keys(globalState).length > 0) {
-    console.log(globalState);
+  if (config) {
     return (
       <div className="App">
         {/* <Overlay state={globalState} config={config}/> */}

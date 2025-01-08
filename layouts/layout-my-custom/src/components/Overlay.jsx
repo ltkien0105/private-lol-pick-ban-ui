@@ -73,20 +73,20 @@ const Overlay = ({state, config}) => {
 
     return (
         <div className="w-screen h-screen flex flex-col justify-end">
-            <div className="flex justify-between">
+            {/* <div className="flex justify-between">
                 <div className="banBlue flex bg-white basis-[24%] h-[80px]">
                     { state.blueTeam.bans.map((ban, index) => <ChampionBanCell key={index} team={"Blue"} loadingImg={ban.champion.squareImg} />)}
                 </div>
                 <div className="banRed flex bg-white basis-[24%] h-[80px]">
                     { state.redTeam.bans.map((ban, index) => <ChampionBanCell key={index} team={"Red"} loadingImg={ban.champion.squareImg} />)}
                 </div>
-            </div>
+            </div> */}
             { isPicking && <div className={`bg-[red] h-[5px] ${css.Timer12}`}></div> }
             { isBanning && <div className={`bg-white h-[5px] ${css.Timer12}`}></div> }
-            <div className="h-[22.5%] w-full flex">
-                <div id="blue-team" className="flex basis-2/5 divide-x divide-[#625d6b]">
-                    {state.blueTeam.picks.map((pick, index) => <ChampionPickCell key={index} role={playerNames.blue[index].role} playerName={playerNames.blue[index].name} team={"Blue"}/>)}
-                </div>
+            <div className="h-[22.5%] w-full flex overflow-hidden">
+                {/* <div id="blue-team" className="flex basis-2/5 divide-x divide-[#625d6b]">
+                    {state.blueTeam.picks.map((pick, index) => <ChampionPickCell key={index} pickInfo={pick} role={playerNames.blue[index].role} playerName={playerNames.blue[index].name} team={"Blue"}/>)}
+                </div> */}
                 <div id="overall" className="flex flex-col items-center basis-1/5 bg-[#110e18] px-[20px] gap-[10px]">
                     <TeamInfo 
                         matchInfo={"R2 MATCH 2"}
@@ -98,9 +98,9 @@ const Overlay = ({state, config}) => {
                         redScore={config.frontend.redTeam.score}
                     />
                 </div>
-                <div id="red-team" className="flex basis-2/5 divide-x divide-[#625d6b]">
-                    {state.redTeam.picks.map((pick, index) => <ChampionPickCell key={index} role={playerNames.red[index].role} playerName={playerNames.red[index].name} team={"Red"}/>)}
-                </div>
+                {/* <div id="red-team" className="flex basis-2/5 divide-x divide-[#625d6b]">
+                    {state.redTeam.picks.map((pick, index) => <ChampionPickCell key={index} pickInfo={pick} role={playerNames.red[index].role} playerName={playerNames.red[index].name} team={"Red"}/>)}
+                </div> */}
             </div>
         </div>
     );

@@ -32,3 +32,74 @@
     }
 }
 
+.PickItemBlue:nth-child(5),
+.PickItemRed:nth-child(1) {
+    margin-top: 50%;
+    animation: appearance 320ms linear 0s forwards;
+}
+
+.PickItemBlue:nth-child(4),
+.PickItemRed:nth-child(2) {
+    margin-top: 50%;
+    animation: appearance 340ms linear 0s forwards;
+}
+
+.PickItemBlue:nth-child(3),
+.PickItemRed:nth-child(3) {
+    margin-top: 50%;
+    animation: appearance 360ms linear 0s forwards;
+}
+
+.PickItemBlue:nth-child(2),
+.PickItemRed:nth-child(4) {
+    margin-top: 50%;
+    animation: appearance 380ms linear 0s forwards;
+}
+
+.PickItemBlue:nth-child(1),
+.PickItemRed:nth-child(5) {
+    margin-top: 50%;
+    animation: appearance 400ms linear 0s forwards;
+}
+
+@keyframes appearance {
+    100% {
+        margin-top: 0%;
+    }
+}
+
+.MatchInfo {
+    animation: increaseOpacity 500ms linear 0s forwards;
+}
+
+@keyframes increaseOpacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+.ScaleLogo {
+    animation: scaleLogo 500ms linear 0s forwards;
+}
+
+@keyframes scaleLogo {
+    100% {
+        scale: 0.7;
+        transform: translateY(-30px);
+    }
+}
+
+.BlueTeamLogo {
+    animation: moveLogo 500ms linear 0s forwards;
+}
+
+.RedTeamLogo {
+    transform: translateX(121%);
+    animation: moveLogo 500ms linear 0s forwards;
+}
+
+@keyframes moveLogo {
+    100% {
+        transform: translateX(0%);
+    }
+}

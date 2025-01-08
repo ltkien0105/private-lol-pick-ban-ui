@@ -6,7 +6,7 @@ import supSplash from "../assets/sup_splash_placeholder.svg";
 
 import css from "../style/index.module.css"
 
-export default function ChampionPickCell({ role, playerName, team, isActive }) {
+export default function ChampionPickCell({ role, pickInfo, playerName, team }) {
     var src = "";
     switch (role) {
         case "Top":
@@ -29,9 +29,13 @@ export default function ChampionPickCell({ role, playerName, team, isActive }) {
     }
 
     return (
-        <div className={`h-full w-1/5 bg-[#18131f] ${isActive ? (team == 'Blue' ? css.OwnAnimationBlue : css.OwnAnimationRed) : ''}`}>
+        <div className={`${team == 'Blue' ? css.PickItemBlue : css.PickItemRed } h-full w-1/5 bg-[#18131f] ${(pickInfo && pickInfo.isActive) ? (team == 'Blue' ? css.OwnAnimationBlue : css.OwnAnimationRed) : ''}`}>
             <div className="h-full flex items-center justify-center relative">
-                <img src={src} alt="Champion picked" />
+                {
+                pickInfo && ('id' in pickInfo) && pickInfo.champion && pickInfo.champion.loadingImg.includes('/cache')
+                ? <img className="w-full h-full object-cover" src={pickInfo.champion.loadingImg} alt="Champion picked" />
+                : <img src={src} alt="Champion picked" />
+                }
                 <p className="absolute bottom-1 text-[#4a4750] font-bold">{playerName}</p>
             </div>
         </div>
